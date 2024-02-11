@@ -86,40 +86,16 @@ h2 {
 }
 
 
-/* ================= Maquinaria ================ *
+/* ================= Maquinaria ================ */
 .maquinarias {
     height: 100%;
     width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.producto {
-    height: 100%;
-    width: auto;
-    display: flex;
-    align-items: center;
-}
-
-.card-producto {
-    height: 50%;
-    width: 50%;
-    text-align: center;
-    margin: 0px 4px;
 }
 
 h3 {
     font-size: 2rem;
 }
 
-.card-producto h3 {
-    background-color: #4c87af;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
 
 .boton {
     font-size: 1.5rem;
@@ -133,43 +109,30 @@ h3 {
     -o-border-radius: 20px;
 }
 
-/* ================= Contacto ================ *
+/* ================= Contacto ================ */
 .contacto {
-    display: flex;
     height: 100%;
     width: 100%;
     background-color: #c2c2c2;
 }
 
-.contactanos {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding-right: 8px;
-    text-align: center;
-    align-items: center;
-}
-
 .contactanos-foto {
     height: 50%;
-    width: 50%;
-}
-
-.contactanos-foto,
-img {
-    border-radius: 180px;
-    -webkit-border-radius: 180px;
-    -moz-border-radius: 180px;
-    -ms-border-radius: 180px;
-    -o-border-radius: 180px;
+    width: 60%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .iconos-contacto {
     font-size: 1.6rem;
-    display: flex;
-    flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
 .telefono {
     margin-top: 8px;
     color: #038410;
@@ -225,10 +188,13 @@ button {
 button:hover {
     background-color: #09ff1a;
 }
+/* ================= Contacto ================ *
 
-/* ================= Galeria-pages ================*
+
+
+/* ================= Galeria-pages ================*/
 .galeria {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
 }
 
