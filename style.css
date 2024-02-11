@@ -154,8 +154,7 @@ a{
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+
     text-align: center;
 }
 
@@ -175,19 +174,7 @@ label {
     margin: 4px 0px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-}
 
-button:hover {
-    background-color: #09ff1a;
-}
 /* ================= Contacto ================ *
 
 
