@@ -1,0 +1,29 @@
+.navbar{
+    &-nav {
+        .nav-link {
+            padding: 0.5rem 1rem;
+            color: $color-terciario;
+            transition: color 0.3s ease;
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+    //mixin
+    &-brand img {
+        @include size(80px, auto);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    &-collapse {
+        justify-content: flex-end;
+    }
+}
+
+.logo {
+    height: 70px;
+}
+

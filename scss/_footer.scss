@@ -1,0 +1,25 @@
+footer {
+    background-color: $color-fondo;
+
+    .social-icon {
+        font-size: map-get($size-map , size-secundario);
+        margin: 0px 8px;
+        padding: 0px 4px;
+
+        &.ico-facebook {
+            color: map-get($redes-map , $key: facebook);
+
+            &:hover {
+                color: $color-facebook;
+            }
+        }
+
+        &.icono-telefono {
+            color: map-get($redes-map , $key: whatsapp);
+
+            &:hover {
+                color: $color-whatsapp;
+            }
+        }
+    }
+}

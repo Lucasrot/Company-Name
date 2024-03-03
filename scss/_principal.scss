@@ -1,0 +1,45 @@
+
+h1 {
+    font-family: $fuente-titulos;
+    color: $color-principal;
+    font-size: map-get($size-map, size-principal);
+}
+
+
+.boton {
+    font-size: map-get($size-map , size-secundario);
+    padding: 10px 16px;
+    background-color: $color-secundario;
+    color: $color-terciario;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    &:hover {
+        background-color: $color-principal;
+    }
+}
+
+
+.Sobre-nosotros {
+    height: 100%;
+    width: 100%;
+    background-image: url(../asset/img/cosechadora.jpg);
+
+    .empresario-agricultor {
+        padding: 0px 4px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    h2 {
+        font-family: $fuente-titulos;
+    }
+}
+
+

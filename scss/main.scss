@@ -1,0 +1,18 @@
+
+
+//Reset
+@import './reset/variables';
+@import './reset/general';
+@import './reset/mixin';
+
+//Estructura
+@import 'header';
+@import 'principal';
+@import 'footer';
+
+//pages
+@import './pages-scss/contacto';
+@import './pages-scss/nosotros';
+@import './pages-scss/politica';
+@import './pages-scss/producto';
+@import './pages-scss/video';

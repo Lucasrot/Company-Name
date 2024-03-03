@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tilt+Prism&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd000;
+}
+.navbar-brand img {
+  width: auto;
+  height: 80px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 70px;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #e89353;
+  font-size: 3.5rem;
+}
+
+.boton {
+  font-size: 2rem;
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.boton:hover {
+  background-color: #e89353;
+}
+
+.Sobre-nosotros {
+  height: 100%;
+  width: 100%;
+  background-image: url(../asset/img/cosechadora.jpg);
+}
+.Sobre-nosotros .empresario-agricultor {
+  padding: 0px 4px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.Sobre-nosotros h2 {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+footer {
+  background-color: #0c0909;
+}
+footer .social-icon {
+  font-size: 2rem;
+  margin: 0px 8px;
+  padding: 0px 4px;
+}
+footer .social-icon.ico-facebook {
+  color: rgba(2, 15, 128, 0.774);
+}
+footer .social-icon.ico-facebook:hover {
+  color: rgb(0, 195, 255);
+}
+footer .social-icon.icono-telefono {
+  color: rgb(5, 182, 5);
+}
+footer .social-icon.icono-telefono:hover {
+  color: #05ff1e;
+}
+
+.contacto {
+  height: 100%;
+  width: 100%;
+  background-color: #c2c2c2;
+}
+.contacto .contactanos-foto {
+  height: 50%;
+  width: 60%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contacto .iconos-contacto {
+  font-size: 1.5rem;
+}
+.contacto a {
+  text-decoration: none;
+}
+.contacto .telefono {
+  margin-top: 8px;
+  color: rgb(5, 182, 5);
+  padding-right: 18px;
+}
+.contacto .telefono:hover {
+  color: #05ff1e;
+}
+.contacto .ico-Email {
+  margin: 8px 0px;
+  color: #5c0202;
+  padding-right: 18px;
+}
+.contacto .ico-Email:hover {
+  color: #ff0000;
+}
+
+form {
+  text-align: center;
+}
+form input,
+form textarea {
+  height: 40px;
+}
+form label {
+  width: 100%;
+  font-size: 1.5rem;
+}
+form .form-button {
+  margin: 4px 0px;
+}
+
+.Politicas-calidad-page {
+  height: 90vh;
+}
+
+.maquinarias {
+  height: 100%;
+  width: 100%;
+}
+.maquinarias .card {
+  width: 25rem;
+}
+.maquinarias .card img {
+  max-width: 100%;
+}
+.maquinarias .card .card-body h3 {
+  font-size: 2rem;
+}
+.maquinarias .card .card-body .card-text {
+  font-size: 1.5rem;
+}
+.maquinarias .card .card-body .btn.boton {
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.maquinarias .card .card-body .btn.boton:hover {
+  background-color: #ffd000;
+}
+
+.galeria {
+  height: 80vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
