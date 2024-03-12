@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Company Name</title>
 </head>
-
 <body>
-
     <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <header class="mb-5">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./asset/img/logo.jpg" alt="Logo" class="logo">
@@ -40,41 +38,59 @@
             </div>
         </nav>
     </header>
-
-
     <!-- Home -->
-    <section class="home d-flex flex-lg-row mb-1 mt-1 flex-column-reverse justify-content-center align-items-center"
+    <section class="home d-flex flex-lg-row mt-3 flex-column-reverse justify-content-center align-items-center"
         id="Home">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-center"  data-aos="fade-right">
+            <h1 class="text-center" data-aos="fade-right">
                 Alquiler de maquinaria agrícola en Mar del Plata: Potencia tu producción con confiabilidad
             </h1>
             <a href="./pages/productos.html">
                 <button class="boton">Maquinaria</button>
             </a>
-        </div>
-        <img src="./asset/img/vecteezy_tractor.jpg" class="img-fluid"
-            height="100%" width="50%" alt="Foto de tractor" data-aos="fade-left">
+        </div> 
+        <img src="./asset/img/vecteezy_tractor.jpg" class="tractor-index img-fluid" alt="Foto de tractor"
+            data-aos="fade-left">
     </section>
-
-
     <!-- Sobre Nosotros -->
-    <main class="Sobre-nosotros text-center">
-        <H2 class="fs-1 fw-bold text-decoration-underline">Sobre Nosotros</H2>
-        <div class="nosotros d-flex flex-lg-row-reverse flex-column justify-content-between align-items-center">
-            <p class="fs-2 text">
+    <main class="sobre-nosotros text-center d-flex flex-lg-row-reverse flex-column-reverse">
+        <aside class="nosotros d-flex flex-column justify-content-around align-items-center">
+            <h2 class="fs-1 fw-bold text-decoration-underline" data-aos="fade-down">Sobre Nosotros</h2>
+            <p class="fs-2 text" data-aos="fade-up-right">
                 Somos una empresa dedicada al alquiler de maquinaria agrícola en Mar del Plata
             </p>
-            <img src="./asset/img/empresario-agricultor.jpg" class="empresario-agricultor img-fluid"
-                alt="empresario-agricultor" height="30%" width="40%">
-        </div>
-        <a href="./pages/sobre-nosotros.html">
-            <button class="fs-4 boton mt-2 mb-1">Saber mas sobre nosostros</button>
-        </a>
+            <a href="./pages/sobre-nosotros.html">
+                <button class="fs-4 boton mb-1" data-aos="fade-up">Saber mas sobre nosostros</button>
+            </a>
+        </aside>
+        <img src="./asset/img/empresario-agricultor.jpg" class="empresario-agricultor img-fluid"
+            alt="empresario-agricultor" data-aos="flip-left">
     </main>
+    <!--  -->
+    <details>
 
-
-
+    </details>
+    <!-- Contenido -->
+    <section class="contenido">
+        <aside class="card-galeria">
+            <img src="./asset/img/galeria-hover.jpg" alt="fotos de galeria" class="galeria img-fluid">
+            <article class="contenido-card">
+                <h4>Galeria</h4>
+                <a href="./pages/video.html">
+                    <button class="boton">Galeria</button>
+                </a>
+            </article>
+        </aside>
+        <section class="card-producto">
+            <img src="./asset/img/maquinaria-hover.jpg" alt="fotos de maquinaria" class="maquinaria img-fluid">
+            <article class="contenido-card">
+                <h4>Galeria</h4>
+                <a href="./pages/video.html">
+                    <button class="boton">Galeria</button>
+                </a>
+            </article>
+        </section>
+    </section>
     <!-- Footer -->
     <footer id="footer" class="d-flex justify-content-between">
         <a class="navbar-brand" href="#">
@@ -87,16 +103,13 @@
                     class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
-
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
 </body>
-
 </html>

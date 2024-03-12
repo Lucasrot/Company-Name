@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tilt+Prism&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
 }
 
 .navbar-nav .nav-link {
@@ -14,7 +22,7 @@
 }
 .navbar-brand img {
   width: auto;
-  height: 80px;
+  height: 70px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -29,10 +37,17 @@
   height: 70px;
 }
 
-h1 {
+.home {
+  background-color: #ffffff;
+}
+.home h1 {
   font-family: "Chakra Petch", sans-serif;
   color: #e89353;
   font-size: 3.5rem;
+}
+.home .tractor-index {
+  height: 100%;
+  width: 50%;
 }
 
 .boton {
@@ -50,23 +65,115 @@ h1 {
   background-color: #e89353;
 }
 
-.Sobre-nosotros {
-  height: 100%;
+.sobre-nosotros {
+  background-color: #ffffff;
   width: 100%;
-  background-image: url(../asset/img/cosechadora.jpg);
+  height: 100%;
 }
-.Sobre-nosotros .empresario-agricultor {
-  padding: 0px 4px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+.sobre-nosotros .empresario-agricultor {
+  height: 100%;
+  width: 50%;
 }
-.Sobre-nosotros h2 {
+.sobre-nosotros h2 {
   font-family: "Chakra Petch", sans-serif;
 }
 
+.contenido {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+.contenido .card-galeria {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #4CAF50;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 10px 15px;
+}
+.contenido .card-galeria .galeria {
+  height: 100%;
+  width: 100%;
+}
+.contenido .card-producto {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #4CAF50;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 10px 15px;
+}
+.contenido .card-producto .maquinaria {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .home {
+    margin-top: 8px;
+  }
+  .home .tractor-index {
+    margin-top: 38px;
+  }
+  .home .boton {
+    margin: 4px 0px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .sobre-nosotros {
+    background-image: url(../../asset/img/empresario-agricultor.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+  }
+  .nosotros {
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .empresario-agricultor {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contenido {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+  }
+  .contenido aside {
+    height: 100%;
+    width: 100%;
+  }
+  .contenido aside .galeria {
+    height: 100%;
+    width: 100%;
+  }
+  .contenido .productos {
+    height: 100%;
+    width: 100%;
+  }
+  .contenido .productos .maquinaria {
+    height: 100%;
+    width: 100%;
+  }
+}
 footer {
   background-color: #0c0909;
 }
@@ -144,10 +251,6 @@ form .form-button {
   height: 90vh;
 }
 
-.maquinarias {
-  height: 100%;
-  width: 100%;
-}
 .maquinarias .card {
   width: 25rem;
 }

@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tilt+Prism&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth
+}
+body{
+    background-color: black;
 }
