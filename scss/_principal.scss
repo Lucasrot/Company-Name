@@ -1,5 +1,5 @@
 //Home
-.home{
+.home {
     background-color: $color-terciario;
     h1 {
         font-family: $fuente-titulos;
@@ -7,12 +7,12 @@
         font-size: map-get($size-map, size-principal);
     }
     .tractor-index {
-        height: 100%; 
+        height: 100%;
         width: 50%;
     }
 }
 .boton {
-    font-size: map-get($size-map , size-secundario);
+    font-size: map-get($size-map, size-secundario);
     padding: 10px 16px;
     background-color: $color-secundario;
     color: $color-terciario;
@@ -25,54 +25,181 @@
         background-color: $color-principal;
     }
 }
+//servicios
+.servicios {
+    display: flex;
+    background-color: $color-terciario;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 8px 0px;
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+}
 //Sobre Nosotros
 .sobre-nosotros {
-    background-color: $color-terciario;
+    background-color: $color-fondo;
+    color: $color-terciario;
     width: 100%;
     height: 100%;
     .empresario-agricultor {
-        height: 100%;
-        width: 50%;
-    }
-    h2 {
-        font-family: $fuente-titulos;
-    }
+            height: 100%;
+            width: 50%;
+        }
+        h2 {
+            font-family: $fuente-titulos;
+        }
 }
-
 //Contenido
-.contenido{
-    height: 90%;
+.contenido {
+    height: 330px;
     width: 100%;
+    padding: 10px 30px;
     display: flex;
-    .card-galeria{
+    .card {
+        margin-right: 22px;
         width: 100%;
         height: 100%;
-        border: 6px solid $color-secundario;
+        background-color: #f2f2f2;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        margin: 10px 15px;
-        .galeria{
-            height: 100%;
+        overflow: hidden;
+        perspective: 700px;
+        box-shadow: 0 0 0 3px #ffffff80;
+        transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .galeria {
             width: 100%;
+            height: 100%;
+        }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+        }
+        .card__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            transform: rotateX(-90deg);
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -moz-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -ms-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        &:hover .card__content {
+            transform: rotateX(0deg);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+        }
+        .card__title {
+            margin: 0;
+            color: $color-principal;
+            font-weight: 800;
+        }
+        .boton {
+            line-height: 1.4;
+        }
+        &:hover .maquinaria .galeria {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
         }
     }
-    .card-producto{
+    .card-produc {
+        position: relative;
         width: 100%;
         height: 100%;
-        border: 6px solid $color-secundario;
+        background-color: #f2f2f2;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        margin: 10px 15px;
-        .maquinaria{
-            height: 100%;
+        overflow: hidden;
+        perspective: 700px;
+        box-shadow: 0 0 0 3px #ffffff80;
+        transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .maquinaria {
             width: 100%;
+            height: 100%;
+        }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+        .card__content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        &:hover .card__content {
+            transform: rotateX(0deg);
+        }
+        .card__title {
+            margin: 0;
+            color: $color-principal;
+            font-weight: 800;
+        }
+        .boton {
+            line-height: 1.4;
+        }
+        &:hover img {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
         }
     }
 }
-@import './reset/responsive';
+@import "./reset/responsive";

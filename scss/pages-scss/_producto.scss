@@ -1,35 +1,41 @@
-.maquinarias {
-
-    .card {
-        width: 25rem;
-
-        img {
-            max-width: 100%;
-        }
-
-        .card-body {
-            h3 {
-                font-size: map-get($size-map, $key: size-secundario);
+.productos{
+    background-color: $color-terciario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 8px;
+    .maquinarias {
+        .card {
+            height: auto;
+            width: 18rem;
+            img {
+                width: 100%;
+                height: 100%;
             }
-
-            .card-text {
-                font-size: map-get($size-map, $key: size-terciario);
-            }
-
-            .btn.boton {
-                font-size: map-get($size-map,$key: size-terciario);
-                padding: 10px 16px;
-                background-color: $color-secundario;
-                color: $color-terciario;
-                border-radius: 20px;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                -ms-border-radius: 20px;
-                -o-border-radius: 20px;
-                    &:hover {
-                        background-color: $color-hover;
+            .card-body {
+                h3 {
+                    font-size: map-get($size-map, $key: size-secundario);
+                }
+                .card-text {
+                    font-size: map-get($size-map, $key: size-terciario);
+                }
+                .btn.boton {
+                    font-size: map-get($size-map,$key: size-terciario);
+                    padding: 10px 16px;
+                    background-color: $color-secundario;
+                    color: $color-terciario;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                        &:hover {
+                            background-color: $color-hover;
+                        }
                     }
                 }
             }
-        }
+    }
 }

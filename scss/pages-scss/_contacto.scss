@@ -1,61 +1,55 @@
-.contacto {
+.formulario{
     height: 100%;
     width: 100%;
-    background-color: $color-contraste;
-
-    .contactanos-foto {
-        height: 50%;
-        width: 60%;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
-
-    .iconos-contacto {
-        font-size: map-get($size-map , size-terciario);
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .telefono {
-        margin-top: 8px;
-        color: map-get($redes-map , $key: whatsapp);
-        padding-right: 18px;
-
-        &:hover {
-            color: $color-whatsapp;
-        }
-    }
-
-    .ico-Email {
-        margin: 8px 0px;
-        color: map-get($redes-map , $key: Email);
-        padding-right: 18px;
-
-        &:hover {
-            color: #ff0000;
-        }
-    }
-}
-
-form {
-    text-align: center;
-
-    input,
-    textarea {
-        height: 40px;
-    }
-
-    label {
+    background-color: $color-terciario;
+    margin-top: 40px;
+    padding: 90px 10px;
+    .contacto {
+        height: 100%;
         width: 100%;
-        font-size: map-get($size-map, size-terciario);
+        .contactanos-foto {
+            height: 100%;
+            width: 100%;
+        }
+        .iconos-contacto {
+            font-size: map-get($size-map , size-terciario);
+        }
+        a {
+            text-decoration: none;
+        }
+        .telefono {
+            margin-top: 1px;
+            color: map-get($redes-map , $key: whatsapp);
+            
+            &:hover {
+                color: $color-whatsapp;
+            }
+        }
+        .ico-Email {
+            margin: 8px 0px;
+            color: map-get($redes-map , $key: Email);
+            padding-right: 18px;
+            &:hover {
+                color: #ff0000;
+            }
+        }
     }
-
-    .form-button {
-        margin: 4px 0px;
+    form {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        input,
+        textarea {
+            height: 40px;
+            width: 70%;
+        }
+        label {
+            width: 70%;
+            font-size: map-get($size-map, size-terciario);
+        }
+        .form-button {
+            margin: 10px 0px;
+        }
     }
 }
+

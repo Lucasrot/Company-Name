@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header class="mb-5">
+    <header class="mb-4">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -28,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link text-center fs-3" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-center fs-3" href="./pages/sobre-nosotros.html">Nosotros</a>
-                        <a class="nav-link text-center fs-3" href="./pages/productos.html">Maquinaria</a>
-                        <a class="nav-link text-center fs-3" href="./pages/video.html">Video</a>
-                        <a class="nav-link text-center fs-3" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link text-center fs-4" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-center fs-4" href="./pages/sobre-nosotros.html">Nosotros</a>
+                        <a class="nav-link text-center fs-4" href="./pages/productos.html">Maquinaria</a>
+                        <a class="nav-link text-center fs-4" href="./pages/video.html">Galeria</a>
+                        <a class="nav-link text-center fs-4" href="./pages/contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -42,13 +41,13 @@
     <section class="home d-flex flex-lg-row mt-3 flex-column-reverse justify-content-center align-items-center"
         id="Home">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-center" data-aos="fade-right">
+            <h1 class="text-center titulo-h1" data-aos="fade-right">
                 Alquiler de maquinaria agrícola en Mar del Plata: Potencia tu producción con confiabilidad
             </h1>
             <a href="./pages/productos.html">
-                <button class="boton">Maquinaria</button>
+                <button class="boton" data-aos="flip-down">Maquinaria</button>
             </a>
-        </div> 
+        </div>
         <img src="./asset/img/vecteezy_tractor.jpg" class="tractor-index img-fluid" alt="Foto de tractor"
             data-aos="fade-left">
     </section>
@@ -66,27 +65,44 @@
         <img src="./asset/img/empresario-agricultor.jpg" class="empresario-agricultor img-fluid"
             alt="empresario-agricultor" data-aos="flip-left">
     </main>
-    <!--  -->
-    <details>
-
-    </details>
+    <!-- Servicio SECTION -->
+    <section class="servicios">
+        <article class="text-block" data-aos="fade-right">
+            <i class="fas fa-clock"></i>
+            <h3 class="titulo-h3 text-center">Qué Ofrecemos</h3>
+            <p class="text-center">Atención las 24 horas</p>
+        </article>
+        <article class="text-block" data-aos="fade-up">
+            <i class="fas fa-comments"></i>
+            <h3 class="titulo-h3 text-center">Asesoramiento</h3>
+            <p class="text-center">Brindamos asesoramiento para que juntos con el cliente encontremos las mejores soluciones</p>
+        </article>
+        <article class="text-block" data-aos="fade-left">
+            <i class="fas fa-shipping-fast"></i>
+            <h3 class="titulo-h3 text-center">Envío a domicilio</h3>
+            <p class="text-center">Envío a Mar del Plata</p>
+        </article>
+    </section>
     <!-- Contenido -->
     <section class="contenido">
-        <aside class="card-galeria">
+        <aside class="card" data-aos="zoom-in">
             <img src="./asset/img/galeria-hover.jpg" alt="fotos de galeria" class="galeria img-fluid">
-            <article class="contenido-card">
-                <h4>Galeria</h4>
+            <article class="card__content">
+                <h4 class="card__title fs-1">Galeria</h4>
+                <p class="card__description">En la galeria vas a ver las maquinarias y los trabajos realizados.</p>
                 <a href="./pages/video.html">
                     <button class="boton">Galeria</button>
                 </a>
             </article>
         </aside>
-        <section class="card-producto">
+        <section class="card-produc" data-aos="zoom-in-up">
             <img src="./asset/img/maquinaria-hover.jpg" alt="fotos de maquinaria" class="maquinaria img-fluid">
-            <article class="contenido-card">
-                <h4>Galeria</h4>
-                <a href="./pages/video.html">
-                    <button class="boton">Galeria</button>
+            <article class="card__content">
+                <h4 class="card__title fs-1">Productos</h4>
+                <p class="card__description">En la seccion de productos vas a ver las maquinarias que podras alquilar o
+                    comprar.</p>
+                <a href="./pages/productos.html">
+                    <button class="boton">Productos</button>
                 </a>
             </article>
         </section>

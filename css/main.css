@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tilt+Prism&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+html, body {
+  overflow-x: hidden !important;
   background-color: black;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #e89353;
+  font-size: 3.5rem;
 }
 
 .navbar-nav .nav-link {
@@ -65,8 +68,27 @@ body {
   background-color: #e89353;
 }
 
-.sobre-nosotros {
+.servicios {
+  display: flex;
   background-color: #ffffff;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding: 8px 0px;
+}
+.servicios .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios i {
+  font-size: 1.5rem;
+}
+
+.sobre-nosotros {
+  background-color: #0c0909;
+  color: #ffffff;
   width: 100%;
   height: 100%;
 }
@@ -79,44 +101,156 @@ body {
 }
 
 .contenido {
-  height: 90%;
+  height: 330px;
   width: 100%;
+  padding: 10px 30px;
   display: flex;
 }
-.contenido .card-galeria {
+.contenido .card {
+  margin-right: 22px;
   width: 100%;
   height: 100%;
-  border: 6px solid #4CAF50;
+  background-color: #f2f2f2;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  margin: 10px 15px;
+  overflow: hidden;
+  perspective: 700px;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.contenido .card-galeria .galeria {
-  height: 100%;
+.contenido .card .galeria {
   width: 100%;
+  height: 100%;
 }
-.contenido .card-producto {
+.contenido .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.contenido .card .card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   width: 100%;
   height: 100%;
-  border: 6px solid #4CAF50;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contenido .card:hover .card__content {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+}
+.contenido .card .card__title {
+  margin: 0;
+  color: #e89353;
+  font-weight: 800;
+}
+.contenido .card .boton {
+  line-height: 1.4;
+}
+.contenido .card:hover .maquinaria .galeria {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.contenido .card-produc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  margin: 10px 15px;
+  overflow: hidden;
+  perspective: 700px;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.contenido .card-producto .maquinaria {
-  height: 100%;
+.contenido .card-produc .maquinaria {
   width: 100%;
+  height: 100%;
+}
+.contenido .card-produc:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.contenido .card-produc .card__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contenido .card-produc:hover .card__content {
+  transform: rotateX(0deg);
+}
+.contenido .card-produc .card__title {
+  margin: 0;
+  color: #e89353;
+  font-weight: 800;
+}
+.contenido .card-produc .boton {
+  line-height: 1.4;
+}
+.contenido .card-produc:hover img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 @media screen and (max-width: 780px) {
   .home {
     margin-top: 8px;
+  }
+  .home .titulo-h1 {
+    font-size: 2.1rem;
   }
   .home .tractor-index {
     margin-top: 38px;
@@ -158,6 +292,7 @@ body {
     width: 100%;
   }
   .contenido aside {
+    margin: 10px 0px;
     height: 100%;
     width: 100%;
   }
@@ -165,13 +300,39 @@ body {
     height: 100%;
     width: 100%;
   }
-  .contenido .productos {
+  .contenido .card-produc {
+    height: 100%;
+    width: 100%;
+    margin: 2px 0px;
+  }
+  .contenido .card-produc .maquinaria {
     height: 100%;
     width: 100%;
   }
-  .contenido .productos .maquinaria {
+}
+@media screen and (min-width: 780px) {
+  .galeria {
     height: 100%;
     width: 100%;
+    padding-top: 100px;
+  }
+  .galeria .galeria1 {
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  .galeria .galeria1:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+}
+@media screen and (max-width: 780px) {
+  .contacto .contactanos-foto {
+    display: none;
   }
 }
 footer {
@@ -195,75 +356,101 @@ footer .social-icon.icono-telefono:hover {
   color: #05ff1e;
 }
 
-.contacto {
+.formulario {
   height: 100%;
   width: 100%;
-  background-color: #c2c2c2;
+  background-color: #ffffff;
+  margin-top: 40px;
+  padding: 90px 10px;
 }
-.contacto .contactanos-foto {
-  height: 50%;
-  width: 60%;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+.formulario .contacto {
+  height: 100%;
+  width: 100%;
 }
-.contacto .iconos-contacto {
+.formulario .contacto .contactanos-foto {
+  height: 100%;
+  width: 100%;
+}
+.formulario .contacto .iconos-contacto {
   font-size: 1.5rem;
 }
-.contacto a {
+.formulario .contacto a {
   text-decoration: none;
 }
-.contacto .telefono {
-  margin-top: 8px;
+.formulario .contacto .telefono {
+  margin-top: 1px;
   color: rgb(5, 182, 5);
-  padding-right: 18px;
 }
-.contacto .telefono:hover {
+.formulario .contacto .telefono:hover {
   color: #05ff1e;
 }
-.contacto .ico-Email {
+.formulario .contacto .ico-Email {
   margin: 8px 0px;
   color: #5c0202;
   padding-right: 18px;
 }
-.contacto .ico-Email:hover {
+.formulario .contacto .ico-Email:hover {
   color: #ff0000;
 }
-
-form {
+.formulario form {
+  display: flex;
+  align-items: center;
   text-align: center;
 }
-form input,
-form textarea {
+.formulario form input,
+.formulario form textarea {
   height: 40px;
+  width: 70%;
 }
-form label {
-  width: 100%;
+.formulario form label {
+  width: 70%;
   font-size: 1.5rem;
 }
-form .form-button {
-  margin: 4px 0px;
+.formulario form .form-button {
+  margin: 10px 0px;
 }
 
-.Politicas-calidad-page {
+.nosotro {
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding-top: 70px;
+  padding-bottom: 8px;
+}
+
+.polica {
+  background-color: #ffffff;
+  margin-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 8px;
+}
+.polica .Politicas-calidad-page {
   height: 90vh;
 }
 
-.maquinarias .card {
-  width: 25rem;
+.productos {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 8px;
 }
-.maquinarias .card img {
-  max-width: 100%;
+.productos .maquinarias .card {
+  height: auto;
+  width: 18rem;
 }
-.maquinarias .card .card-body h3 {
+.productos .maquinarias .card img {
+  width: 100%;
+  height: 100%;
+}
+.productos .maquinarias .card .card-body h3 {
   font-size: 2rem;
 }
-.maquinarias .card .card-body .card-text {
+.productos .maquinarias .card .card-body .card-text {
   font-size: 1.5rem;
 }
-.maquinarias .card .card-body .btn.boton {
+.productos .maquinarias .card .card-body .btn.boton {
   font-size: 1.5rem;
   padding: 10px 16px;
   background-color: #4CAF50;
@@ -274,13 +461,14 @@ form .form-button {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.maquinarias .card .card-body .btn.boton:hover {
+.productos .maquinarias .card .card-body .btn.boton:hover {
   background-color: #ffd000;
 }
 
 .galeria {
-  height: 80vh;
+  height: 100%;
   width: 100%;
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
